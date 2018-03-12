@@ -1,0 +1,1 @@
+{"jobID":"54ecf538-3cca-4330-db1f-3597fc0fac9a","spec":{"type":"policy","cause":{"Message":"","User":"Taras Puchko \u003ct.puchko@nethunt.com\u003e"},"spec":{"default:deployment/test-app-deployment":{"add":{"automated":"true"},"remove":{}}}},"result":null}
