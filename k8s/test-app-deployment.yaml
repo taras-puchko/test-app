@@ -1,6 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    flux.weave.works/automated: "true"
   name: test-app-deployment
 spec:
   replicas: 2
