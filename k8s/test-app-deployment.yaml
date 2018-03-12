@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test-app-container
-        image: gcr.io/fiery-return-161811/test-app:release-xxxxxxx
+        image: gcr.io/fiery-return-161811/test-app:master-6323c0e
         ports:
         - containerPort: 80
           name: http
