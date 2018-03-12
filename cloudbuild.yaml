@@ -1,0 +1,8 @@
+steps:
+  - name: "gcr.io/cloud-builders/go"
+    args: ["install", "github.com/taras-puchko/test-app"]
+    env: ["PROJECT_ROOT=github.com/taras-puchko/test-app"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/fiery-return-161811/test-app:$BRANCH_NAME-$SHORT_SHA", "-f", "Dockerfile", "."]
+images:
+  - "gcr.io/fiery-return-161811/test-app:$BRANCH_NAME-$SHORT_SHA"
